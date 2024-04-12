@@ -3,3 +3,11 @@
 tener dos argumentos de entrada, el primero debe ser el valor de X 
 como tal y el segundo la precisión, es decir, 
 la cantidad de términos que se tienen que considerar para la sumatoria.
+
+
+
+def mclaure1(x, n):
+    suma = 0
+    for i in range(1, n + 1):
+        suma = suma + ((pow(x, i)) * (pow(-1, i+1))) / i
+    return suma
